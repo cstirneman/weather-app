@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="search-div">
+            <input type="text" name="search-bar" id="city-search-bar" placeholder="Search for a city">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div class="search-results" id="search-results-div" style="display: none;">
+            <h3>Search Results</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="weather-info-container" id="weather-info-div" style="display: none;">
+            <h1 id="city-name">City Name</h1>
+
+            <div class="weather-conditions">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon" id="weather-icon">
+                <h3 id="weather-condition">sunny</h3>
+            </div>
+            
+            <div class="weather-data-container" id="weather-data">
+                <div class="temp">
+                    <h3 id="temperature"><span class="description-label">Temperature</span> <br> 70</h3>
+                    <h3 id="feel-like-temp"><span class="description-label">Feels like</span><br>74</h3>
+                </div>
+                
+                <div class="wind-humidity">
+                    <h3 id="humidity"><span class="description-label">Humidity</span><br>90%</h3>
+                    <h3 id="wind"><span class="description-label">Wind Speed:</span><br>10mph</h3>
+                </div>
+            </div> 
+
+            <h3>5 Day Forcast</h3>
+
+            <div class="five-day-container" id="five-day-div">
+                <div class="five-day"  id="day-1">
+                    <h4>Monday</h4>
+                    <h5>78/80</h5>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon" id="weather-icon">
+                </div>
+
+                <div class="five-day" id="day-2">
+                    <h4>Monday</h4>
+                    <h5>78/80</h5>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon" id="weather-icon">
+                </div>
+
+                <div class="five-day" id="day-3">
+                    <h4>Monday</h4>
+                    <h5>78/80</h5>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon" id="weather-icon">
+                </div>
+
+                <div class="five-day" id="day-4">
+                    <h4>Monday</h4>
+                    <h5>78/80</h5>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon" id="weather-icon">
+                </div>
+
+                <div class="five-day" id="day-5">
+                    <h4>Monday</h4>
+                    <h5>78/80</h5>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon" id="weather-icon">
+                </div>   
+            </div>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
