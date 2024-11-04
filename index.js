@@ -29,7 +29,7 @@ let currentCities = [];
 
 
 async function fetchCityNames(cityName, apiKey) {
-    const apiURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`;
+    const apiURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`;
 
     try {
         const response = await fetch(apiURL);
