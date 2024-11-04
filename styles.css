@@ -14,6 +14,12 @@ header{
     position: relative; 
 }
 
+header img{
+    position: absolute;
+    left: 5vw;
+    height:12vh
+}
+
 main {
     background-image: url('./images/mountain-background.jpg');
     background-repeat: no-repeat; 
@@ -23,7 +29,6 @@ main {
     width: 100%; 
 }
 
-
 .search-div{
     display: flex;
     flex-direction: row;
@@ -31,6 +36,8 @@ main {
 }
 
 .search-div input{
+    box-sizing: border-box;
+    border: none;
     width: 100%;
     height: 100%;
     border: 2px solid rgba(109, 109, 109);
@@ -40,11 +47,24 @@ main {
     font-size: 2rem;
 }
 
+.search-div input:hover{
+    border-color: blue;
+}
+
+header .search-div input:focus {
+    border: 4px solid blue; /* Test with a bold, obvious color */
+}
+
+
 .search-div button{
     border: 2px solid rgba(109, 109, 109);
     border-radius: 5px;
     padding: 5px;
     color: black;
+}
+
+.search-div button:hover{
+    border: 2px solid blue;
 }
 
 .search-results {
@@ -91,6 +111,7 @@ main{
 .weather-info-container h1{
     text-align: center;
     font-size: 3rem;
+    color: white;
 }
 
 .weather-info-container img{
